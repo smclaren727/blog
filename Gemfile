@@ -44,5 +44,8 @@ group :development, :test do
 
   # Devise for authentication
   gem 'devise', '~> 3.5.1'
+
+  # seed data
+  gem 'faker', '~> 1.4.3'
 end
 
