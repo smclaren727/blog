@@ -13,15 +13,14 @@
       <ul>
         <li class="category">Website</li>
         <li><%= link_to "Blog", root_path %></li>
-        <li>About</li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
 
       <ul>
        <li class="category">Social</li>
-       <li><a href="https://twitter.com/mackenziechild">Twitter</a></li>
-       <li><a href="http://instagram.com/mackenziechild">Instagram</a></li>
-       <li><a href="https://github.com/mackenziechild">Github</a></li>
-       <li><a href="mailto:hey@mackenziechild.me">Email</a></li>
+       <li><a href="https://twitter.com/smclaren727">Twitter</a></li>
+       <li><a href="https://github.com/smclaren727">Github</a></li>
+       <li><a href="mailto:sean@seanmclaren.com">Email</a></li>
       </ul>
 
       <p class="sign_in">Admin Login</p>
@@ -31,7 +30,7 @@
     <div id="header">
       <% if current_page?(root_path) %>
         <p>All Posts</p>
-      <%# elsif current_page?(about_path) %>
+      <% elsif current_page?(about_path) %>
         <p>About</p>
       <% else %>
         <%= link_to "Back to All Posts", root_path %>
